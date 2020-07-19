@@ -20,6 +20,14 @@ void _generateParenthesis(int left, int right, int n, string str){
    //reverse 
 }
 
+vector<string> generateParenthesis(int n) {  
+   int left = 0;
+   int right = 0;
+   _generateParenthesis(left,right,n,"");
+}
+
+
+
 //深度遍历
 void dfs(string str,int left, int right, vector<string>& ans){
     if(left == 0 && right == 0) {
@@ -40,14 +48,6 @@ void dfs(string str,int left, int right, vector<string>& ans){
     }
     
 }
-
-vector<string> generateParenthesis(int n) {  
-   int left = 0;
-   int right = 0;
-   _generateParenthesis(left,right,n,"");
-}
-
-
 
 vector<string> generateParenthesis(int n) {  
     vector<string> ans;
